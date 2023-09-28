@@ -8,6 +8,7 @@ Shader "Experimental/TestShader"
         // [MainTexture] and [MainColor] allow Material.mainTexture and Material.color to use the correct properties
         [MainTexture] _ColorMap("Color", 2D) = "white" {}
         [MainColor] _ColorTint("Tint", Color) = (1, 1, 1, 1)
+        _Smoothness("Smoothness", Float) = 0
     }
 
 
@@ -27,6 +28,8 @@ Shader "Experimental/TestShader"
             
             HLSLPROGRAM // Begin HLSL code
             
+            #define _SPECULAR_COLOR
+
             // Register our programmable stage functions
             #pragma vertex Vertex
             #pragma fragment Fragment
