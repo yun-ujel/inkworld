@@ -77,6 +77,8 @@ float4 Fragment(Interpolators input) : SV_TARGET {
 	// This will take significantly more processing power, so if we're running slow, use the expression below instead:
 	//lightingInput.normalWS = input.normalWS;
 
+	lightingInput.shadowCoord = TransformWorldToShadowCoord(input.positionWS);
+
 	SurfaceData surfaceInput = (SurfaceData)0;
 
 	surfaceInput.albedo = colorSample.rgb * _ColorTint.rgb;
