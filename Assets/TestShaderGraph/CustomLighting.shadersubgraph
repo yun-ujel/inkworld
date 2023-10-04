@@ -33,6 +33,9 @@
             "m_Id": "b534fe754dc84e7b89dd06e538589d70"
         },
         {
+            "m_Id": "78383dc1a891468687665d8221434ac5"
+        },
+        {
             "m_Id": "fc0d57e1637b4c908c110e3e2dfbfd16"
         }
     ],
@@ -726,6 +729,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "78383dc1a891468687665d8221434ac5",
+    "m_Guid": {
+        "m_GuidSerialized": "54da64ed-0456-4bad-8b72-fbb3e8b7a672"
+    },
+    "m_Name": "ShadowMasks",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "ShadowMasks",
+    "m_DefaultReferenceName": "_SHADOWMASKS",
+    "m_OverrideReferenceName": "SHADOWS_SHADOWMASK",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 2,
+    "m_Entries": [],
+    "m_Value": 1,
+    "m_IsEditable": true
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "7a2a683479734ba3aaf91f7743aca5d7",
@@ -1238,6 +1266,9 @@
         },
         {
             "m_Id": "fc0d57e1637b4c908c110e3e2dfbfd16"
+        },
+        {
+            "m_Id": "78383dc1a891468687665d8221434ac5"
         }
     ]
 }
@@ -1268,7 +1299,7 @@
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "LightmapShadowMixing",
     "m_DefaultReferenceName": "_LIGHTMAPSHADOWMIXING",
-    "m_OverrideReferenceName": "_LIGHTMAP_SHADOW_MIXING",
+    "m_OverrideReferenceName": "LIGHTMAP_SHADOW_MIXING",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
