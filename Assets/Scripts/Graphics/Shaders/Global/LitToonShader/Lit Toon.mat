@@ -70,7 +70,7 @@ Material:
     - _Ramp_Offset: 0.5
     - _Rim_Light_Offset: 0.5
     - _Rim_Offset: 0.5
-    - _Smoothness: 0
+    - _Smoothness: 0.01
     m_Colors:
     - _Tinting: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
