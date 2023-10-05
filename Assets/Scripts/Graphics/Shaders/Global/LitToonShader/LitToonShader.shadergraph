@@ -26,6 +26,12 @@
         },
         {
             "m_Id": "d0f8be84440a45b6bc85843d570dcdbb"
+        },
+        {
+            "m_Id": "09aa5271f2cd42fb98bb0b213aed0899"
+        },
+        {
+            "m_Id": "2084344bf5284e57b91a605a1ce85a03"
         }
     ],
     "m_Keywords": [],
@@ -140,6 +146,12 @@
         },
         {
             "m_Id": "e80a1c0c208f4e55a63b00dd85c0c709"
+        },
+        {
+            "m_Id": "ea970e71219f40a69843475dd404d438"
+        },
+        {
+            "m_Id": "d76025ea27834e2a82363ade1d36d9d3"
         }
     ],
     "m_GroupDatas": [],
@@ -442,6 +454,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "d76025ea27834e2a82363ade1d36d9d3"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "fb46104ef68e4536a141f88afc9972ec"
+                },
+                "m_SlotId": 9
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "da00ddb180f84eef81d55f3cab93fd2a"
                 },
                 "m_SlotId": 2
@@ -465,6 +491,20 @@
                     "m_Id": "caede934c5854af1b626ee2c4c55030a"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "ea970e71219f40a69843475dd404d438"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "fb46104ef68e4536a141f88afc9972ec"
+                },
+                "m_SlotId": 8
             }
         },
         {
@@ -693,6 +733,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "0523735ba8644923b197d1f686cc69a3",
+    "m_Id": 8,
+    "m_DisplayName": "ToonRampOffsetPoint",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ToonRampOffsetPoint",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "074ced0f29bb45389cd519a1cd15fd0a",
     "m_Id": 6,
@@ -712,6 +767,34 @@
         "z": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "09aa5271f2cd42fb98bb0b213aed0899",
+    "m_Guid": {
+        "m_GuidSerialized": "4073a3dd-5a97-4cad-916a-57901086f687"
+    },
+    "m_Name": "Point Light Offset",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Point Light Offset",
+    "m_DefaultReferenceName": "_Point_Light_Offset",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 1,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -856,6 +939,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "167574bfd1ee427b8fd8b69c182ff6dd",
+    "m_Id": 0,
+    "m_DisplayName": "Ambient Light",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "178ddc63fd8b457e8bd9acfbeaa30010",
     "m_Group": {
@@ -916,6 +1014,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "1a573664795340e69c467d2c19e74137",
+    "m_Id": 0,
+    "m_DisplayName": "Point Light Offset",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "1b5f2448c4ee4a208391fea7ad807c5e",
     "m_Group": {
@@ -947,6 +1060,34 @@
     },
     "m_Property": {
         "m_Id": "b09d7832a3f247b7af13f1cac67fbfbd"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "2084344bf5284e57b91a605a1ce85a03",
+    "m_Guid": {
+        "m_GuidSerialized": "48c423ac-346f-450a-8676-3862265c3526"
+    },
+    "m_Name": "Ambient Light",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Ambient Light",
+    "m_DefaultReferenceName": "_Ambient_Light",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 1,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -1632,10 +1773,10 @@
     "m_Guid": {
         "m_GuidSerialized": "e5889e1e-df14-491c-a30a-0c7e5eda5356"
     },
-    "m_Name": "Ramp Offset",
+    "m_Name": "Main Light Offset",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Ramp Offset",
-    "m_DefaultReferenceName": "_Ramp_Offset",
+    "m_RefNameGeneratedByDisplayName": "Main Light Offset",
+    "m_DefaultReferenceName": "_Main_Light_Offset",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1792,6 +1933,9 @@
             "m_Id": "546f4fa1c38f4842b837fe01d546708c"
         },
         {
+            "m_Id": "09aa5271f2cd42fb98bb0b213aed0899"
+        },
+        {
             "m_Id": "b3932019f504496699328bd5bdc26bec"
         }
     ]
@@ -1879,6 +2023,9 @@
         },
         {
             "m_Id": "d0f8be84440a45b6bc85843d570dcdbb"
+        },
+        {
+            "m_Id": "2084344bf5284e57b91a605a1ce85a03"
         }
     ]
 }
@@ -2302,9 +2449,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1555.0,
-            "y": 567.0,
-            "width": 141.0,
+            "x": -1620.0,
+            "y": 623.0,
+            "width": 165.0,
             "height": 34.0
         }
     },
@@ -2449,9 +2596,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1515.0,
-            "y": 520.9999389648438,
-            "width": 112.9998779296875,
+            "x": -1569.0,
+            "y": 590.0000610351563,
+            "width": 113.0,
             "height": 33.99993896484375
         }
     },
@@ -2580,10 +2727,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1541.0,
-            "y": 449.9999084472656,
+            "x": -1597.0,
+            "y": 449.0,
             "width": 140.0,
-            "height": 33.99993896484375
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -2620,6 +2767,21 @@
             "m_Id": "c3fd38d8b7544b2d82c65334754ca8d5"
         }
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a92a81c0b93040cfba0529f59f3b5b87",
+    "m_Id": 9,
+    "m_DisplayName": "Ambient",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Ambient",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -3340,6 +3502,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "d76025ea27834e2a82363ade1d36d9d3",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1606.0,
+            "y": 691.0,
+            "width": 148.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "167574bfd1ee427b8fd8b69c182ff6dd"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "2084344bf5284e57b91a605a1ce85a03"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "d84043e2eb474d92845b7876ff5c3583",
     "m_Id": 0,
@@ -3556,6 +3754,42 @@
         "e31": 0.0,
         "e32": 0.0,
         "e33": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ea970e71219f40a69843475dd404d438",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1623.0,
+            "y": 656.0,
+            "width": 167.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "1a573664795340e69c467d2c19e74137"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "09aa5271f2cd42fb98bb0b213aed0899"
     }
 }
 
@@ -4065,6 +4299,12 @@
             "m_Id": "967d8251223c4c60b1ec793cb904ad2e"
         },
         {
+            "m_Id": "0523735ba8644923b197d1f686cc69a3"
+        },
+        {
+            "m_Id": "a92a81c0b93040cfba0529f59f3b5b87"
+        },
+        {
             "m_Id": "074ced0f29bb45389cd519a1cd15fd0a"
         },
         {
@@ -4116,7 +4356,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "fedd58aaa632496a894e403205f27e94",
     "m_Id": 0,
-    "m_DisplayName": "Ramp Offset",
+    "m_DisplayName": "Main Light Offset",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
