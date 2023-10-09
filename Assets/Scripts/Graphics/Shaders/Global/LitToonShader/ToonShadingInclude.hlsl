@@ -40,7 +40,7 @@ void ToonShading_float(in float3 Normal, in float ToonRampSmoothness, in float3 
             // dot product for toonramp
             half d = dot(Normal, aLight.direction) * 0.5 + 0.5;
             
-			float distanceAttenuation = aLight.distanceAttenuation > ToonRampOffsetPoint ? 1 : 0;
+			float distanceAttenuation = smoothstep(ToonRampOffsetPoint, ToonRampOffsetPoint+ ToonRampSmoothness, aLight.distanceAttenuation );
 
 			// grab the light, shadows ,and light color
             float3 attenuatedLightColor = aLight.color * (distanceAttenuation * aLight.shadowAttenuation);
