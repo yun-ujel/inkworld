@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ray Normals Outline
+  m_Name: Ray Normals Outline Selected
   m_Shader: {fileID: -6465566751694194690, guid: 538125356b62ae44fb671171e7b1b114, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -54,5 +54,5 @@ Material:
     - _QueueOffset: 0
     - _Thickness: 0.01
     m_Colors:
-    - _Color: {r: 0.3537736, g: 0.8073992, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_BuildTextureStacks: []

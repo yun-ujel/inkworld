@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ray Vertex Outline
+  m_Name: Direct Vertex Outline Selected
   m_Shader: {fileID: -6465566751694194690, guid: 6a81a305d6e000341941a11f71c041ad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -41,7 +41,7 @@ Material:
     - _QueueOffset: 0
     - _Thickness: 1.02
     m_Colors:
-    - _Color: {r: 0.3529412, g: 0.8078432, b: 1, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7448396912096596903
 MonoBehaviour:
