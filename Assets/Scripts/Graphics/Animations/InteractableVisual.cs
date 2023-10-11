@@ -54,7 +54,7 @@ public class InteractableVisual : MonoBehaviour
 
     public void EndHover(HoverExitEventArgs args)
     {
-        if (!isGrabbed)
+        if (!isGrabbed && !args.interactableObject.isHovered)
         {
             ResetMaterials();
         }
