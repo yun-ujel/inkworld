@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GraffitiTrigger : MonoBehaviour
+namespace Inkworld.Mechanics
 {
-    [field: SerializeField] public Texture2D GraffitiTexture { get; set; }
-
-    private void OnDrawGizmosSelected()
+    public class GraffitiTrigger : MonoBehaviour
     {
-        Debug.DrawRay(transform.position, transform.forward, Color.red);
+        [field: SerializeField] public Texture2D GraffitiTexture { get; set; }
+
+        private void OnDrawGizmosSelected()
+        {
+            Debug.DrawRay(transform.position, transform.forward, Color.red);
+        }
     }
+
 }
