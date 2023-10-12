@@ -6,7 +6,7 @@ namespace Inkworld.Mechanics
 {
     public class GraffitiTrigger : MonoBehaviour
     {
-        [field: SerializeField] public Texture2D GraffitiTexture { get; set; }
+        [field: SerializeField] public int GraffitiID { get; set; }
 
         private void OnDrawGizmosSelected()
         {
