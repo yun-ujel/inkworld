@@ -42,14 +42,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _Ambient_Light: 0.25
-    - _Brightness: 1
+    - _Brightness: 0
+    - _Glow_Amount: 0
     - _Main_Light_Offset: 0.5
     - _Point_Light_Offset: 0.01
     - _Power: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rim_Light_Offset: 0.5
-    - _Smoothness: 0.05
+    - _Smoothness: 0
     m_Colors:
     - _Base_Color: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
     - _Tinting: {r: 0, g: 0, b: 0, a: 0}
