@@ -23,7 +23,7 @@ namespace Inkworld.Mechanics.PropCamera
         [Space]
 
         [SerializeField, Range(0f, 1f)] float blackOverlayDuration = 0.5f;
-        [SerializeField, Range(0f, 1f)] float pictureOverlayDuration = 0.8f;
+        [SerializeField, Range(0f, 1f)] float previewOverlayDuration = 0.8f;
 
         private float value;
         private float valueVelocity;
@@ -31,7 +31,7 @@ namespace Inkworld.Mechanics.PropCamera
         private enum OverlayState
         {
             none,
-            picture,
+            preview,
             black
         }
 
@@ -91,14 +91,16 @@ namespace Inkworld.Mechanics.PropCamera
 
                 overlayState = (int)OverlayState.none;
             }
-            else if (state == OverlayState.picture)
+            else if (state == OverlayState.preview)
             {
-                overlay.texture = overlayTexture;
-                overlay.color = Color.white;
+                // Preview sets it to clear, so ViewCameraSwitcher can display a billboard onto the Render Texture
+                overlay.texture = null;
+                overlay.color = Color.clear;
+                overlay.gameObject.SetActive(false);
 
-                overlayState = (int)OverlayState.picture;
+                overlayState = (int)OverlayState.preview;
 
-                overlayUpdateCountdown = pictureOverlayDuration;
+                overlayUpdateCountdown = previewOverlayDuration;
             }
         }
 
@@ -115,12 +117,12 @@ namespace Inkworld.Mechanics.PropCamera
             {
                 switch(overlayState)
                 {
-                    case (int)OverlayState.picture:
+                    case (int)OverlayState.preview:
                         SetOverlayState(OverlayState.none);
 
                         break;
                     case (int)OverlayState.black:
-                        SetOverlayState(OverlayState.picture);
+                        SetOverlayState(OverlayState.preview);
 
                         break;
                     default: 
