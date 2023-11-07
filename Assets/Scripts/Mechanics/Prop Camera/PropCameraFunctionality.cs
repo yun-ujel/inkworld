@@ -6,6 +6,7 @@ namespace Inkworld.Mechanics.PropCamera
 {
     public class PropCameraFunctionality : MonoBehaviour
     {
+        #region Parameters
         public event System.EventHandler<OnTakePictureEventArgs> OnTakePictureEvent;
 
         public class OnTakePictureEventArgs : System.EventArgs
@@ -38,6 +39,8 @@ namespace Inkworld.Mechanics.PropCamera
 
         public float CurrentScore { get; private set; }
         private int currentGraffitiID;
+
+        #endregion
 
         void FixedUpdate()
         {

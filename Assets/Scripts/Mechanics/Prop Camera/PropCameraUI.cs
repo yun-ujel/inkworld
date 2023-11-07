@@ -7,11 +7,14 @@ namespace Inkworld.Mechanics.PropCamera
 {
     public class PropCameraUI : MonoBehaviour
     {
+        #region Parameters
         [Header("References")]
         [SerializeField] private PropCameraFunctionality propCameraVisual;
 
         [Header("UI")]
         [SerializeField] private Slider slider;
+        [SerializeField] private bool enableSlider;
+        [Space]
         [SerializeField] private RawImage overlay;
 
         [Header("Smoothing")]
@@ -36,6 +39,7 @@ namespace Inkworld.Mechanics.PropCamera
         private int overlayState;
         private float overlayUpdateCountdown;
         private Texture2D overlayTexture;
+        #endregion
 
         private void Start()
         {
@@ -49,6 +53,25 @@ namespace Inkworld.Mechanics.PropCamera
             SetOverlayState(OverlayState.black);
         }
 
+        void Update()
+        {
+            UpdateSlider();
+
+            UpdateOverlay();
+        }
+
+        #region Slider Overlay
+        private void UpdateSlider()
+        {
+            if (enableSlider)
+            {
+                value = Mathf.SmoothDamp(value, propCameraVisual.CurrentScore, ref valueVelocity, sliderSmoothTime);
+                slider.value = value;
+            }
+        }
+        #endregion
+
+        #region Picture Overlay
         private void SetOverlayState(OverlayState state)
         {
             if (state == OverlayState.black)
@@ -79,14 +102,6 @@ namespace Inkworld.Mechanics.PropCamera
             }
         }
 
-        void Update()
-        {
-            value = Mathf.SmoothDamp(value, propCameraVisual.CurrentScore, ref valueVelocity, sliderSmoothTime);
-            slider.value = value;
-
-            UpdateOverlay();
-        }
-
         void UpdateOverlay()
         {
             if (overlayState == (int)OverlayState.none)
@@ -113,5 +128,6 @@ namespace Inkworld.Mechanics.PropCamera
                 }
             }
         }
+        #endregion
     }
 }

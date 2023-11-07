@@ -132,9 +132,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2440645}
+  - component: {fileID: 2440647}
   - component: {fileID: 2440644}
   - component: {fileID: 2440643}
   - component: {fileID: 2440642}
+  - component: {fileID: 2440646}
   m_Layer: 13
   m_Name: No Boarding Graffiti
   m_TagString: Untagged
@@ -229,6 +231,32 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2440646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 0
+--- !u!114 &2440647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 5
 --- !u!1 &24560841
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,15 +593,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2295519447458220857, guid: 2cdd6db9f5a157c41bf09b5dcc8a481e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4483348344783886173, guid: 2cdd6db9f5a157c41bf09b5dcc8a481e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6914146983719520814, guid: 2cdd6db9f5a157c41bf09b5dcc8a481e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9077030560226712405, guid: 2cdd6db9f5a157c41bf09b5dcc8a481e, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 15361
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -726,6 +758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496925250}
+  - component: {fileID: 496925251}
   - component: {fileID: 496925249}
   - component: {fileID: 496925248}
   - component: {fileID: 496925247}
@@ -823,6 +856,19 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &496925251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496925246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 0
 --- !u!1 &506633968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799463543}
+  - component: {fileID: 799463544}
   - component: {fileID: 799463542}
   - component: {fileID: 799463541}
   - component: {fileID: 799463540}
@@ -1530,6 +1577,19 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &799463544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799463539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 1
 --- !u!1 &804393320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,7 +2854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6411441936224046035, guid: 40026f1c1b5cd6f42af8aa23dfeca047, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6411441936224046035, guid: 40026f1c1b5cd6f42af8aa23dfeca047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3101,6 +3161,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358883486}
   m_CullTransparentMesh: 1
+--- !u!1 &1402002256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402002257}
+  m_Layer: 0
+  m_Name: Graffiti System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402002257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402002256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1972810300}
+  - {fileID: 1670999419}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429599841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1476392748}
+  - component: {fileID: 1476392749}
   - component: {fileID: 1476392747}
   - component: {fileID: 1476392746}
   - component: {fileID: 1476392745}
@@ -3280,6 +3374,19 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1476392749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476392744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 3
 --- !u!1 &1509617274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +3795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1616861868}
+  - component: {fileID: 1616861869}
   - component: {fileID: 1616861867}
   - component: {fileID: 1616861866}
   - component: {fileID: 1616861865}
@@ -3785,6 +3893,19 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &1616861869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616861864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 2
 --- !u!1 &1659951248
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,19 +4047,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670999418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1610125788}
-  - {fileID: 756466567}
-  - {fileID: 877055151}
-  - {fileID: 1251742738}
   - {fileID: 1253065618}
   - {fileID: 1314441668}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  - {fileID: 1251742738}
+  - {fileID: 877055151}
+  - {fileID: 756466567}
+  - {fileID: 1610125788}
+  m_Father: {fileID: 1402002257}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696692579
 GameObject:
@@ -4327,7 +4448,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938243775
 GameObject:
@@ -4338,6 +4459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938243779}
+  - component: {fileID: 1938243780}
   - component: {fileID: 1938243778}
   - component: {fileID: 1938243777}
   - component: {fileID: 1938243776}
@@ -4435,6 +4557,19 @@ Transform:
   m_Father: {fileID: 1972810300}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1938243780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938243775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0bc97933adf340a9d57e01a35e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <GraffitiID>k__BackingField: 4
 --- !u!1 &1968089000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,7 +4666,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972810299}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.6, y: 5, z: -99.999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4542,8 +4677,8 @@ Transform:
   - {fileID: 1476392748}
   - {fileID: 1938243779}
   - {fileID: 2440645}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1402002257}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984478706
 GameObject:
@@ -4746,7 +4881,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1997139964479505699, guid: d0486fdfb71939442a61598cfc10085c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1997139964479505699, guid: d0486fdfb71939442a61598cfc10085c, type: 3}
       propertyPath: m_LocalScale.x
@@ -5270,7 +5405,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450653198222875
 Transform:
