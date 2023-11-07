@@ -14,6 +14,9 @@ namespace Inkworld.Mechanics.PropCamera
         [Header("References")]
         [SerializeField] private PropCameraFunctionality propCameraFunctionality;
 
+        [Header("Settings")]
+        [SerializeField] private float focusPreviewCooldown;
+
         private bool isFocusingPreview;
         private float focusPreviewCooldownCounter;
 
@@ -26,7 +29,7 @@ namespace Inkworld.Mechanics.PropCamera
         {
             FocusViewCamera(args.GraffitiID);
             isFocusingPreview = true;
-            focusPreviewCooldownCounter = 4;
+            focusPreviewCooldownCounter = focusPreviewCooldown;
         }
 
         private void Update()

@@ -160,9 +160,10 @@ MonoBehaviour:
   slider: {fileID: 6806837667622852529}
   enableSlider: 0
   overlay: {fileID: 688772583704152630}
+  border: {fileID: 7689651023857905888}
   sliderSmoothTime: 0.2
   blackOverlayDuration: 0.5
-  pictureOverlayDuration: 0.8
+  previewOverlayDuration: 3
 --- !u!1 &2244858411467166531
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +498,7 @@ MonoBehaviour:
   m_AddDefaultGrabTransformers: 1
   requiredExtraDistance: 0.15
   horizontalMultiplier: 1.2
-  verticalMultiplier: 3.6
+  verticalMultiplier: 2.4
   minVerticalVelocity: 0.2
   body: {fileID: 3621144205207842015}
 --- !u!54 &3621144205207842015
@@ -508,7 +509,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2295519447458220857}
   serializedVersion: 4
-  m_Mass: 0.5
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -524,7 +525,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!65 &4460946881581822096

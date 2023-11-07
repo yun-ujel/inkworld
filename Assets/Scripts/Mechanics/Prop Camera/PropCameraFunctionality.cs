@@ -45,20 +45,16 @@ namespace Inkworld.Mechanics.PropCamera
         void FixedUpdate()
         {
             Ray direction = new Ray(transform.position, transform.forward);
-            if (Physics.Raycast(direction, out RaycastHit groundHit, 100f, groundLayer))
-            {
-                if (CheckForGraffiti(direction, groundHit))
+            if (CheckForGraffiti(direction, 100f))
                 {
                     return;
                 }
-            }
             currentGraffitiID = -1;
             CurrentScore = 0f;
         }
 
-        private bool CheckForGraffiti(Ray direction, RaycastHit groundHit)
+        private bool CheckForGraffiti(Ray direction, float groundDistance)
         {
-            float groundDistance = groundHit.distance;
             bool hitGraffiti = Physics.Raycast(direction, out RaycastHit graffitiHit, groundDistance + 2f, graffitiLayer);
 
             if (hitGraffiti)
@@ -82,9 +78,13 @@ namespace Inkworld.Mechanics.PropCamera
 
         public void TakePicture()
         {
-            Texture2D pictureTexture = renderTexture.ToTexture2D();
+            if (CurrentScore > 0f)
+            {
+                Texture2D pictureTexture = renderTexture.ToTexture2D();
 
-            OnTakePictureEvent.Invoke(this, new OnTakePictureEventArgs(pictureTexture, CurrentScore, currentGraffitiID));
+                OnTakePictureEvent.Invoke(this, new OnTakePictureEventArgs(pictureTexture, CurrentScore, currentGraffitiID));
+                Debug.Log(currentGraffitiID);
+            }
         }
 
         private void OnDrawGizmosSelected()

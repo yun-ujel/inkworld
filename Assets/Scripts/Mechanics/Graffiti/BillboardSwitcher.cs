@@ -1,8 +1,5 @@
 using Inkworld.Mechanics.PropCamera;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Inkworld.Mechanics
 {
@@ -12,7 +9,7 @@ namespace Inkworld.Mechanics
         [SerializeField] private Texture2D[] unlockedBillboardTextures;
 
         [Header("References")]
-        [SerializeField] private RawImage[] billboardImages;
+        [SerializeField] private BillboardDisplay[] billboardDisplays;
 
         [Space]
         [SerializeField] private PropCameraFunctionality propCameraFunctionality;
@@ -24,7 +21,7 @@ namespace Inkworld.Mechanics
 
         private void OnTakePicture(object sender, PropCameraFunctionality.OnTakePictureEventArgs args)
         {
-            
+            billboardDisplays[args.GraffitiID].TransitionBillboardTexture(unlockedBillboardTextures[args.GraffitiID]);
         }
     }
 }
