@@ -763,9 +763,9 @@ MonoBehaviour:
   meshRenderer: {fileID: 8461313245598059506}
   baseOutlineMaterial: {fileID: 2100000, guid: dbc32361e056d734bb5e610c59b72bad, type: 2}
   rayHoveredOutlineMaterial: {fileID: 2100000, guid: 0a1a320047f7ca94a982d64f9cc17ebe, type: 2}
-  directHoveredOutlineMaterial: {fileID: 2100000, guid: dbc32361e056d734bb5e610c59b72bad, type: 2}
+  directHoveredOutlineMaterial: {fileID: 2100000, guid: 8c9406b00f5cc544ba3a541f7553e9a2, type: 2}
   raySelectedOutlineMaterial: {fileID: 2100000, guid: ea39fd55851a8b44aa6cdc82fa1b8a68, type: 2}
-  directSelectedOutlineMaterial: {fileID: 2100000, guid: dbc32361e056d734bb5e610c59b72bad, type: 2}
+  directSelectedOutlineMaterial: {fileID: 2100000, guid: 4f93f84a2fbcfde44961ecd0d0847fcd, type: 2}
 --- !u!33 &8643902972064886973
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -882,7 +882,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.31
-  far clip plane: 100
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5

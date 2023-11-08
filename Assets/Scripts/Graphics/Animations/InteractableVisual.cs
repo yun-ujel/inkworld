@@ -30,13 +30,16 @@ namespace Inkworld.Graphics
 
         public void StartHover(HoverEnterEventArgs args)
         {
-            if (args.interactorObject.GetType() == typeof(XRRayInteractor))
+            if (!isGrabbed)
             {
-                SetOutline(rayHoveredOutlineMaterial);
-            }
-            else if (args.interactorObject.GetType() == typeof(XRDirectInteractor))
-            {
-                SetOutline(directHoveredOutlineMaterial);
+                if (args.interactorObject.GetType() == typeof(XRRayInteractor))
+                {
+                    SetOutline(rayHoveredOutlineMaterial);
+                }
+                else if (args.interactorObject.GetType() == typeof(XRDirectInteractor))
+                {
+                    SetOutline(directHoveredOutlineMaterial);
+                }
             }
         }
 
