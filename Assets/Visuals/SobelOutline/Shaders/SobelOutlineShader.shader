@@ -31,7 +31,7 @@ Shader "Screen/Sobel Outline" {
             TEXTURE2D(_CameraDepthTexture);
             TEXTURE2D(_CameraNormalsTexture);
 
-			SamplerState sampler_point_clamp;
+			SamplerState sampler_bilinear_clamp;
 			SAMPLER(sampler_CameraOpaqueTexture);
 
 
@@ -57,7 +57,7 @@ Shader "Screen/Sobel Outline" {
 				float2 sobel = 0;
 
 				[unroll] for (int i = 0; i < 9; i++) {
-					float depth = _CameraDepthTexture.Sample(sampler_point_clamp, UV + (sobelSamplePoints[i] * sampleRange));
+		        float depth = _CameraDepthTexture.Sample(sampler_bilinear_clamp, UV + (sobelSamplePoints[i] * sampleRange));
 					sobel += depth * float2(sobelXMatrix[i], sobelYMatrix[i]);
 				}
 				
@@ -76,7 +76,7 @@ Shader "Screen/Sobel Outline" {
 				float2 sobelZ = 0;
 
 				[unroll] for (int i = 0; i < 9; i++) {
-					float3 normal = _CameraNormalsTexture.Sample(sampler_point_clamp, UV + (sobelSamplePoints[i] * sampleRange));
+				float3 normal = _CameraNormalsTexture.Sample(sampler_bilinear_clamp, UV + (sobelSamplePoints[i] * sampleRange));
 					
 					float2 kernel = float2(sobelXMatrix[i], sobelYMatrix[i]);
 
@@ -95,7 +95,7 @@ Shader "Screen/Sobel Outline" {
 			}
 
 			half4 frag (Varyings input) : SV_Target {
-				float4 color = SAMPLE_TEXTURE2D_X(_CameraOpaqueTexture, sampler_point_clamp, input.texcoord);
+			float4 color = SAMPLE_TEXTURE2D_X(_CameraOpaqueTexture, sampler_bilinear_clamp, input.texcoord);
 				float outline = max(DepthOutline(input.texcoord, _SampleRange, _DepthThreshold, _DepthTightening, _DepthOutlineOpacity), NormalsOutline(input.texcoord, _SampleRange, _NormalsThreshold, _NormalsTightening, _NormalsOutlineOpacity));
 
 				return lerp(color, _OutlineColour, outline);
