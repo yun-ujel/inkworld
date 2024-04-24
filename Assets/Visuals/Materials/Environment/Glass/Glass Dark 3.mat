@@ -67,10 +67,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 1
-    - _Distortion_Strength: 0.05
+    - _Distortion_Strength: 0.02
+    - _Offset_Multiplier: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Rotation: 195
+    - _Rotation: 10
     - _Scale: 2
     m_Colors:
     - _Base_Colour: {r: 0.03137255, g: 0.041764475, b: 0.08627451, a: 0}

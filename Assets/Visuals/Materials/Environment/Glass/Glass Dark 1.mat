@@ -67,7 +67,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 1
-    - _Distortion_Strength: 0.05
+    - _Distortion_Strength: 0.02
+    - _Offset_Multiplier: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotation: 170
